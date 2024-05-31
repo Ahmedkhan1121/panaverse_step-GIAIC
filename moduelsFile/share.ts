@@ -24,3 +24,16 @@ let obj2 = {
 }
 export {obj,obj2}
 
+
+// let function1=(a:string[]):void=>{
+//     let savefilter=a.filter((e)=>{
+//         // for(let i=0; i<a.length; i++){
+//         //     console.log(a[i]);
+//         // }
+
+//         if(typeof a ==="string"){
+//             console.log('string');
+//         }
+//     })
+// }
+// let save=function1('my name is ahmed '.split(' '));
