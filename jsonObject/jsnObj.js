@@ -1,28 +1,41 @@
 //Local Storage
-//setItem in Local Storage
-var strLocl = "Hello Local Storage";
-localStorage.setItem("String", strLocl); //for set data in local storage
-var num = 56;
-localStorage.setItem("Number", num.toString()); //for set data in local storage
-var bool = true;
-localStorage.setItem("Boolean", String(bool)); //for set data in local storage
-//Using Object with local Storage
+//setItem
+var strLocl = "Hello Worlds";
+localStorage.setItem("String", strLocl);
+var numLocl = 56;
+localStorage.setItem("Number", numLocl.toString());
+var boolLocl = true;
+localStorage.setItem("Boolean", String(boolLocl));
+//Array
 var arrLocl = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-//JSON - JAVASCRIPT OBJECT NOTATION
-localStorage.setItem("Number-List", JSON.stringify(arrLocl));
+//JSON => JAVASCRIPT OBJECT NOTATION
+localStorage.setItem("Array", JSON.stringify(arrLocl));
+//Object
 var objLocl = {
     name: "Ahmed",
     age: 20,
 };
 localStorage.setItem("Object", JSON.stringify(objLocl));
-localStorage.setItem("Numb", JSON.stringify(true));
-var strLocl2 = 'moiz';
-localStorage.setItem('string2', strLocl2);
-var num2 = 33;
-localStorage.setItem('number2', num2.toString());
-var arrlocal = ["moiz", "ashar", "sameer", 'anus'];
-localStorage.setItem('name list', JSON.stringify(arrlocal));
-//getItem in Local Storage
-var getLocl = localStorage.getItem("String");
-console.log(getLocl);
-console.log(localStorage.getItem("String"));
+//getItem
+var getStrLocl = localStorage.getItem("String");
+console.log(getStrLocl);
+var getNumLocl = localStorage.getItem("Number");
+console.log(Number(getNumLocl));
+var getArrLocl = localStorage.getItem("Array");
+console.log(JSON.parse(getArrLocl));
+var getObjLocl = localStorage.getItem("Object");
+console.log(JSON.parse(getObjLocl));
+var str3 = 'hello mioz';
+localStorage.setItem('string2', str3);
+var numlocal = 33;
+localStorage.setItem('number2', numlocal.toString());
+var Booleanlocal = true;
+localStorage.setItem('boolean2', String(Booleanlocal));
+var Arraylocal = [2, 3, 4, 4, 4, 5];
+localStorage.setItem('array2', JSON.stringify(Arraylocal));
+var objLocl2 = {
+    name: 'ashar',
+    id: 2,
+    arry: ['moiz', 'ashar']
+};
+localStorage.setItem('obj2', JSON.stringify(objLocl2));
