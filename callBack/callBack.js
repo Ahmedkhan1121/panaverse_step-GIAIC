@@ -8,6 +8,8 @@
 // let prom =  prompt("Hi");
 // console.log(4);
 //Asyncronous
+////asyncronous agr us ko code nahi mikta to us ko side me rakh deta he or bhi jab us ka time pua huta he 
+//to la kar deta he
 // console.log(1);
 // console.log(2);
 // setTimeout(() => {
@@ -38,16 +40,17 @@
 // };
 // funcTwo(funcOne)
 //Callback Hell
+//callback hell juhe  function ke ander function ke ander function ke ander as a argument jara hu to callback hell huta he
 var funcCallBack = function (a, cb) {
     setTimeout(function () {
         cb(a);
     }, 2000);
 };
-funcCallBack(5, function (a) {
+funcCallBack(5, function (a1) {
     funcCallBack(5, function (b) {
         funcCallBack(5, function (c) {
             funcCallBack(5, function (d) {
-                console.log(a + b + c + d);
+                console.log(a1 + b + c + d);
             });
         });
     });

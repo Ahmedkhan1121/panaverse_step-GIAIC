@@ -23,6 +23,8 @@ let objIntersc:CombineTypeIntersc = {
     company:"Amazon",
     location:"USA",
 };
+console.log(objIntersc);
+
 type CombineType1 = {
     name:string,
     id:number,
@@ -39,3 +41,22 @@ let obj6:CombineType3 ={
     location:"USA",
     city:"virginia",
 };
+
+type schoolFriend={
+    name:string,
+    number:number,
+    adress:string,
+    SchoolName:string,
+}
+type collgeFriend={
+    collageName:string,
+}
+
+type friends = schoolFriend | collgeFriend ;
+
+function Friend(name:string,number:number,adrees:any,){
+    this.name =name;
+    this.number =number;
+    this.adrees =adrees;
+}
+let friend2 = new friend("ahmed","03182334328",'ahjsun@')

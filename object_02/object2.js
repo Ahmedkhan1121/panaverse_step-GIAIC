@@ -29,23 +29,24 @@
 // };
 // obj = human;
 //Function Structure Typing
-var func1 = function (a, b) {
+let func1 = (a, b) => {
     console.log("Hello Wolrd");
 };
-var func2 = function (a, b) {
+let func2 = (a, b) => {
     return 18;
 };
 // agr ek function ki type void ho to wo kisi bhi type ke function ko assign kr sakta ha,agr kisi function ki type void na ho to wo apne function return type ke ilawa koi type ka function assign nhi kre ga
 func1 = func2;
 console.log(func1(2, 2));
 // Pehla function jo do numbers ko add karta hai
-var add = function (a, b) {
+let add = (a, b) => {
     return a + b;
 };
 // Dusra function jo do numbers ko multiply karta hai
-var multiply = function (x, y) {
+let multiply = (x, y) => {
     return "hello";
 };
+export {};
 // TypeScript kehte hai ke ye dono functions compatible hain
 //   let operation: (a: number, b: number) => number;
 //   add = multiply;

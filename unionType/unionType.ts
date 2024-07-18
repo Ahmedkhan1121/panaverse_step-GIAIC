@@ -18,7 +18,6 @@ console.log(typeNarw);
 
 
 
-
 let str2:string|string[]=['moiz','ashar','sameer','anus'];
 console.log(str2);
 str2='moiz'

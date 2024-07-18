@@ -9,7 +9,8 @@
 // console.log(4);
 
 //Asyncronous
-//asyncronous agr us ko code nahi mikta to us ko side me rakh deta he or bhi jab us ka time pua huta he to la kar deta he
+////asyncronous agr us ko code nahi mikta to us ko side me rakh deta he or bhi jab us ka time pua huta he 
+//to la kar deta he
 // console.log(1);
 // console.log(2);
 // setTimeout(() => {

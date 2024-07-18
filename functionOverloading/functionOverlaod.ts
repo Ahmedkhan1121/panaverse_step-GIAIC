@@ -29,3 +29,13 @@
 //     name:"Ahmed",
 //     rollNo:"34"
 // }
+
+
+function overLoad(a:string, b:string):string
+function  overLoad(a:number, b:number):number
+function overLoad(a:boolean, b:boolean):boolean
+function overLoad(a:string[],b:number):string[]
+function overLoad(a:any,b:any):any {
+    return a+b;
+}
+console.log(overLoad("hello".toLowerCase(),"world".toUpperCase()));

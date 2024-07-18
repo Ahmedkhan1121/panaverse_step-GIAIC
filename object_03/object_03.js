@@ -1,6 +1,6 @@
 //Nested Object
 //object ke ander object nested object hota ha
-var PrentObj = {
+let PrentObj = {
     name: "Hello",
     childObj: {
         name: "Child",
@@ -12,3 +12,4 @@ var PrentObj = {
     },
 };
 console.log(typeof PrentObj.callChildName());
+export {};
